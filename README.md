@@ -5,8 +5,9 @@
 
 # About, install & run
 This is an angular application.
-Backend is a REST Api, and database sqlite3.
+Backend is a REST Api Express & node.js, and database sqlite3.
 And a socket server.
+
 Made as a course project 2024, BTH - Blekinge technical institute
 Start it with npm or angular.
  
@@ -17,37 +18,31 @@ Run ng test       - tests the environment.
 ## Npm start
 npm run start
 
-Selenium tests are placed in the TestSelenium directory.
-
 ## Base layout and functionality
-Angular has a basic set up and scheme with modules that work together. A main layout is created with CSS, 
-then each component has the possibility to add new style to that part. The whole project is created of modules called components, 
-as a part of the interface the angular framework offers. Their special language and way of doing it, which is the essence of frameworks - a repeated 
+Angular has a basic set up of modules that can work together. A main layout is created with CSS, 
+then each component add style to that part. The project is created of modules called components, 
+as a part of the interface the angular framework offers. The essence of frameworks - a repeated 
 creational structure. With special language that belongs to that framework. 
 
-## Fetching an API
-A backend API is a gateway to a system. And with angular we can connect to that gateway, that interface using dependency injection. 
-Meaning that a dependency is injected into a module, that then can use the functionality entered. 
-
-### Dependency injection as a service
-Angular functionality allows to have the API fetch as 'a service'. 
-Which is a dependency injection that can be read into any module. And the functionality read. 
+## Fetching an API & dependency injection
+A backend API is a gateway to a system. And with angular we can connect to that gateway. The functionality to connect to an API is dependency injected - loaded - into a module. 
+In angular it is called 'a service' - dependency injection into any module. Then the functionality of the service / injection can be used.
 See: src/app/api-connect 
 
-## Chat service with socket.io
-The chat service with socket.io is loaded in the app.module.ts. Socket being a direct real time connection.
-That is where the backend chat server is configured, pointed to. Then using a dependency injection service (chat-service.service.js) the chat can be loaded into a module.
+## Realtime service with socket.io
+The realtime service with socket.io is loaded in the app.module.ts. Socket being a direct real time connection between server & client.
+Configuration in app.module.ts of the connection. Then using a dependency injection service (chat-service.service.js) the realtime functionality can be loaded into a module.
 The module sample is in app/chat - the real time through socket.io. Here is is used for real time product price setting. 
-And everytime a new price is set, the product price in the sqlite3 database is updated. That happens on the backend side. A server with the socket.io connection is running,
-that has access to the same server sqlite3 as the rest of the API. So 2 servers connected to that sqlite. And the new price you write is updated through the socket 
-connection through a client that is connected to the socket.io server. In this sample the client is part of the main application. But technically the client could be elsewhere.
-The backend server is also connected to the API, as mentioned. It is however a separate server. The sqlite are files and to keep the files in the same locaiton on the server seems good. 
+When a new price is set, the product price in the sqlite3 database is updated. That happens on the backend side. A server with the socket.io connection is running,
+that has access to the same database (sqlite3) as the rest of the API. So 2 servers connected to that database file. In this sample the client is part of the main application. But technically the client could be elsewhere. The backend server is separate and connected to the API, as mentioned. The sqlite are files kept in the same location. 
 
 ## Selenium tests
-In 
+Selenium tests are tests run in a browser environment, as the end user would experience it.
 testSelenium/test/firstScript/testProj.spec.js
 testSelenium/test/firstScript/fScriptProj.js
+Selenium tests are placed in the TestSelenium directory.
 
+Test cases:
 Tests to load the website,
 confirm page the title,
 use the navigation, 

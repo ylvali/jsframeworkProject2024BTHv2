@@ -1,6 +1,5 @@
 <div class="centerColumn">
 
-        <div class="btns">
             <!-- <div (click)="route1()" class="submitBtn"> Introduction  </div> -->
             <!-- <div (click)="route2()" class="submitBtn"> Token  </div> -->
             <!-- <div (click)="route3()" class="submitBtn"> All users  </div>
@@ -12,25 +11,30 @@
             <div (click)="addMoney()" class="submitBtn"> Add $1000 </div>
             <div (click)="buyProduct()" class="submitBtn"> Buy product </div>
             <div (click)="sellProduct()" class="submitBtn"> Sell product </div> -->
-            
             <button class="submitBtn" id="test" (click)="testAPI()" > Test connection </button>
+        <div class="btns1">
             <button class="submitBtn" (click)="addProduct()" > Add product </button>
             <button class="submitBtn" (click)="seeProduct()" > See product </button>
             <button class="submitBtn" (click)="checkDepot()" > Check Depot </button>
+        </div>
+        <div class="btns2">
             <button class="submitBtn" (click)="addMoney()" > Add $1000 </button>
             <button class="submitBtn" (click)="buyProduct()" > Buy product </button>
             <button class="submitBtn" (click)="sellProduct()" > Sell product </button>
-
         </div>
 
         <div class="response">
             <p> {{response}} </p>
         </div>
 
-        <ul class="users">
+        <div class="imgDiv">
+            <img src="assets/img/earth.png" alt="earth">
+        </div>
+
+        <!-- <ul class="users">
             <li *ngFor="let user of users">
                 <b> {{user.name}} </b> {{user.email}} 
             </li>
-        </ul>
+        </ul> -->
 
 

@@ -2,9 +2,10 @@
 
 html {
   overflow-y: scroll;
-  background-color: #8A7BAA;
+  background-color: #726490;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1em;
+  min-width: 250px;
   overflow-y: scroll;
 }
 
