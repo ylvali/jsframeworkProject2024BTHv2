@@ -31,4 +31,4 @@ before_script:
 script:
     - npm install
     - npm run build
-    - npm start
+  #  - npm start
