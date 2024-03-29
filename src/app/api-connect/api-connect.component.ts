@@ -39,46 +39,25 @@ export class ApiConnectComponent {
       this.ApiCallService.reqCall(method, url, callback, obj1, params, header);
     }
 
-    // Token
-    // callback2(thisObj,res, result) {
-    //   console.log(res);
-    //   console.log(result);
-
-    //   thisObj.response = result.data.token;
-    //   thisObj.users = {};
-    // }
-
-    // callback3(thisObj, res, result) {
-    //   console.log(result.data);
-    //   thisObj.users = result.data.data;
-
-    //   console.log(result.data.data[0].name)
-    //   thisObj.response = 'Success';
-    // }
-
     // Test API
     callback4(thisObj, res, result) {
       console.log(result.data);
-      // thisObj.users = result.data.data;
 
       console.log(result.data.msg)
       thisObj.response = result.data.msg;
       thisObj.response = result.data.pres2;
-      // thisObj.users = '';
     }
 
     // See product
     callback5(thisObj, res, result) {
         console.log(res);
         console.log(result.data);
-        // thisObj.users = result.data.data;
 
         thisObj.response = 'missing data';
       if (result.data.msg != undefined) {
         console.log(result.data.msg)
         thisObj.response = result.data.msg.name;
         thisObj.response += " $"+result.data.msg.price;
-        // thisObj.users = {};
       }
     }
 
@@ -86,13 +65,10 @@ export class ApiConnectComponent {
     callback6(thisObj, res, result) {
       if (result.data != undefined) {
           console.log(result.data);
-          // thisObj.users = result.data.data;
     
           thisObj.response = "Email: "+result.data.msg.email+" | ";
           thisObj.response += "Nr products: "+result.data.msg.nrProducts+" | ";
           thisObj.response += "Sum: "+result.data.msg.sum+" | ";
-
-          // thisObj.users = {};
       }
     }
 
@@ -106,24 +82,6 @@ export class ApiConnectComponent {
         thisObj.response = result.msg;
       }
     }
-
-    // ROUTES 
-    // Token
-    // route2() {
-    //   this.callAPi2('GET', 'https://me-api.ysojs.se/token', this.callback2);
-    // }
-
-    // route3() {
-    //   this.callAPi2('POST', 'https://me-api.ysojs.se/users/allUsers', this.callback3);
-    // }
-
-    // // AllLoggedOn
-    // route8() {
-    //   var url = 'https://me-api.ysojs.se/users/allLoggedOn';
-    //   var params;
-    //   params = {};
-    //   this.callAPi2('POST', url, this.callback3, params);
-    // }
 
     // Test the new API
     // Calls the API and returns the data to a callback
@@ -147,7 +105,6 @@ export class ApiConnectComponent {
       params = {};
       this.callAPi2('POST', url, this.callback7, params);
     }
-
 
     checkDepot() {
       var userOnline;
