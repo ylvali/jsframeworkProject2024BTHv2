@@ -1,6 +1,6 @@
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/?branch=main)
-[![Build Status](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/build.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/build-status/main)
-[![Build Status](https://app.travis-ci.com/ylvali/jsframeworkProject2024BTHv2.svg?token=zbGBcfgSpBchF7HShAt4&branch=main)](https://app.travis-ci.com/ylvali/jsframeworkProject2024BTHv2)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ylvali/jsframeworkProject2024BTHv2/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/ylvali/jsframeworkProject2024BTHv2/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/ylvali/jsframeworkProject2024BTHv2/badges/build.png?b=main)](https://scrutinizer-ci.com/g/ylvali/jsframeworkProject2024BTHv2/build-status/main)
+[![Build Status](https://app.travis-ci.com/ylvali/jsframeworkProject2024BTHv2.svg?token=zbGBcfgSpBchF7HShAt4&branch=main)](https://app.travis-ci.com/ylvali/jsframeworkProject2024BTHv2) 
 
 # Frontend Me-API 
 Frontend: 
