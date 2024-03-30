@@ -284,7 +284,7 @@ export class FormComponent {
 
   setNewDataApi(email, password, name = null, birthday = null): void { 
     var thisObj = this;
-    var url = 'http://localhost:8333/register';
+    var url = 'https://project-js-backend.ysojs.se/users/register';
     var params;
 
     params = {"email":email, "password":password, "name":name, "birthday":birthday};

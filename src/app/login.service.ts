@@ -121,7 +121,7 @@ export class LoginService {
 
     // Login
     login(email, password) {
-      var url = 'http://localhost:8333/users/login';
+      var url = 'https://project-js-backend.ysojs.se/users/login';
       var params;
       var token = null;
       var obj1 = this;
@@ -133,7 +133,7 @@ export class LoginService {
     }
 
     logoutApi() {
-      var url = 'http://localhost:8333/users/logout';
+      var url = 'https://project-js-backend.ysojs.se/users/logout';
       var params;
       var token = null;
       var obj1 = this;

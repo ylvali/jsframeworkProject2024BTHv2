@@ -14,7 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { ChatComponent } from './chat/chat.component'; //chat
 import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io'; //chat
 // const config: SocketIoConfig = { url: 'https://chat-server.ysojs.se', options: {} }; //chat
-const config: SocketIoConfig = { url: 'http://localhost:3001', options: {} }; //chat
+const config: SocketIoConfig = { url: 'https://project-js-socket.ysojs.se/', options: {} }; //chat
 
 const appRoutes: Routes = [
   { path: '', component: AboutComponent },

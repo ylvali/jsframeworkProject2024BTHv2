@@ -1,5 +1,10 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/?branch=main)
 [![Build Status](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/build.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/build-status/main)
+[![Build Status](https://app.travis-ci.com/ylvali/jsframeworkProject2024BTHv2.svg?token=zbGBcfgSpBchF7HShAt4&branch=main)](https://app.travis-ci.com/ylvali/jsframeworkProject2024BTHv2)
+
+# Frontend Me-API 
+Frontend: 
+https://github.com/ylvali/jsframeworkProject2024BTHv2
 
 
 # About, install & run
@@ -47,6 +52,15 @@ confirm page the title,
 use the navigation, 
 load data with the API buttons,
 check that the data is correct. 
+
+## API SERVER set up 
+Set in 
+- src/app/login-service.ts
+- src/app/api-connect/api-connect.component.ts
+- src/app/form/form.component.ts
+
+## Socket SERVER set up 
+app.module.ts
 
 <!-- # FROM THE ANGULAR DOCUMENTATION
 ## MyApp
