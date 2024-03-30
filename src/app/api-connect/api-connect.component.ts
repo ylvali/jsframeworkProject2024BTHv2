@@ -86,21 +86,21 @@ export class ApiConnectComponent {
     // Test the new API
     // Calls the API and returns the data to a callback
     testAPI() {
-      var url = 'https://project-js-backend.ysojs.se/';
+      var url = 'http://localhost:8335/';
       var params;
       params = {};
       this.callAPi2('GET', url, this.callback4, params);
     }
 
     seeProduct() {
-      var url = 'https://project-js-backend.ysojs.se/shop/seeProduct';
+      var url = 'http://localhost:8335/shop/seeProduct';
       var params;
       params = {productName: "prodX"};
       this.callAPi2('POST', url, this.callback5, params);
     }
 
     addProduct() {
-      var url = 'https://project-js-backend.ysojs.se/shop/addProduct';
+      var url = 'http://localhost:8335/shop/addProduct';
       var params;
       params = {};
       this.callAPi2('POST', url, this.callback7, params);
@@ -115,7 +115,7 @@ export class ApiConnectComponent {
         this.response = 'no user online';
       }
       if (userOnline.email != undefined) {
-          var url = 'https://project-js-backend.ysojs.se/shop/checkDepot';
+          var url = 'http://localhost:8335/shop/checkDepot';
           var params;
           params = {email: userOnline.email };
           this.callAPi2('POST', url, this.callback6, params);
@@ -132,7 +132,7 @@ export class ApiConnectComponent {
         this.response = 'no user online';
       }
       if (userOnline.email != undefined) {
-          var url = 'https://project-js-backend.ysojs.se/shop/addMoney';
+          var url = 'http://localhost:8335/shop/addMoney';
           var params;
           params = {email: userOnline.email };
           this.callAPi2('POST', url, this.callback7, params);
@@ -148,7 +148,7 @@ export class ApiConnectComponent {
         this.response = 'no user online';
       }
       if (userOnline.email != undefined) {
-          var url = 'https://project-js-backend.ysojs.se/shop/buyProduct';
+          var url = 'http://localhost:8335/shop/buyProduct';
           var params;
           params = {email: userOnline.email, productName: 'prodX' };
           this.callAPi2('POST', url, this.callback7, params);
@@ -164,7 +164,7 @@ export class ApiConnectComponent {
         this.response = 'no user online';
       }
       if (userOnline.email != undefined) {
-          var url = 'https://project-js-backend.ysojs.se/shop/sellProduct';
+          var url = 'http://localhost:8335/shop/sellProduct';
           var params;
           params = {email: userOnline.email, productName: 'prodX' };
           this.callAPi2('POST', url, this.callback7, params);
